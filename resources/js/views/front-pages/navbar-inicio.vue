@@ -4,6 +4,7 @@ import logosiglesia from '@images/logo.png';
 
 const router = useRouter()
 const ability = useAbility()
+const isDialogVisible = ref(false)
 
 // TODO: Get type from backend
 const userData = useCookie('userData')
@@ -64,16 +65,40 @@ const logout = async () => {
   <!-- Botón Cerrar Sesión -->
         <div class="d-flex gap-x-4">
           <NavbarThemeSwitcher />
-          <VBtn
-            prepend-icon="bx-exit"
-            variant="elevated"
-            color="primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            @click="logout"
-          >
-            Cerrar Sesión
-          </VBtn>
+          <VDialog
+    v-model="isDialogVisible"
+    width="500"
+  >
+    <!-- Activator -->
+    <template #activator="{ props }">
+      <VBtn 
+      prepend-icon="bx-exit"
+      variant="elevated"
+      color="primary"
+      target="_blank"
+      rel="noopener noreferrer"
+      v-bind="props"
+      >
+        Cerrar Sesión
+      </VBtn>
+    </template>
+
+    <!-- Dialog close btn -->
+    <DialogCloseBtn @click="isDialogVisible = !isDialogVisible" />
+
+    <!-- Dialog Content -->
+    <VCard title="Cerrar Sesión">
+      <VCardText>
+        ¿Está seguro(a) de cerrar sesión?
+      </VCardText>
+
+      <VCardText class="d-flex justify-end">
+        <VBtn @click="logout">
+          Confirmar
+        </VBtn>
+      </VCardText>
+    </VCard>
+  </VDialog>
         </div>
       </VAppBar>
     </div>

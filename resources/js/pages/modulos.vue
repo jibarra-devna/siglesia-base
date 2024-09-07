@@ -66,7 +66,7 @@ definePage({
           <VBtn
           rounded="pill"
           variant="tonal"
-          to="dashboards/crm"
+          to="librosparroquiales/resumen"
           class="boton"
           >
           Ingresar

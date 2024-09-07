@@ -10,11 +10,11 @@ export default [
     children: [
       {
         title: 'Resumen',
-        to: 'dashboards-analytics',
+        to: 'librosparroquiales-resumen',
       },
       {
         title: 'Bautismos',
-        to: 'dashboards-crm',
+        to: 'librosparroquiales-bautismos',
       },
       {
         title: 'Comuniones',

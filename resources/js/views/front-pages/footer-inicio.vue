@@ -10,7 +10,7 @@
       {{ new Date().getFullYear() }}
       <b>&nbsp;SIGLESIA</b>.
       Un sistema propiedad de <a
-        href="https://themeselection.com/"
+        href="https://devna.mx"
         target="_blank"
         rel="noopener noreferrer"
         class="text-primary ms-1"
