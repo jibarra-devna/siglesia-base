@@ -12,7 +12,7 @@ const data = [
     responsiveId: '',
     id: 95,
     avatar: avatar2,
-    fullName: 'Edwina Ebsworth',
+    fullName: 'Edwina Ebsworthee',
     post: 'Human Resources Assistant',
     email: 'eebsworth2m@sbwire.com',
     city: 'Puzi',
