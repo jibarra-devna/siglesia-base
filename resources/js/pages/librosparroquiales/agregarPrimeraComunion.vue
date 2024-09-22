@@ -127,52 +127,17 @@
         <v-col cols="12">
           <v-row>
             <v-col cols="6">
-              <v-row>
-                <v-col cols="6">
-                  <VTextField
-                  label="Fecha de Nacimiento"
-                  type="date"
-                  variant="outlined"
-                />
-                </v-col>
-                <v-col cols="6">
-                  <VRadioGroup
-                    v-model="sexoRegistoBa"
-                    inline
-                  >
-                    <VRadio
-                      label="Hombre"
-                      value="hombre"
-                    />
-                    <VRadio
-                      label="Mujer"
-                      value="mujer"
-                    />
-                  </VRadioGroup>
-                </v-col>
-            </v-row>
+              <VTextField
+                label="Bautizado en la Parroquia"
+                variant="outlined"
+              />
             </v-col>
             <v-col cols="6">
-              <v-row>
-                <v-col cols="4">
-                  <VTextField
-                  label="Oficialia"
-                  variant="outlined"
-                />
-                </v-col>
-                <v-col cols="4">
-                  <VTextField
-                  label="Libro"
-                  variant="outlined"
-                />
-                </v-col>
-                <v-col cols="4">
-                  <VTextField
-                  label="Acta"
-                  variant="outlined"
-                />
-              </v-col>
-            </v-row>
+              <VTextField
+                label="Fecha de Bautismo"
+                type="date"
+                variant="outlined"
+              />
             </v-col>
           </v-row>
         </v-col>
@@ -180,13 +145,13 @@
           <v-row>
             <v-col cols="6">
               <VTextField
-                label="Lugar de Nacimiento"
+                label="Población Parroquia"
                 variant="outlined"
               />
             </v-col>
             <v-col cols="6">
               <VSelect
-                label="Estado"
+                label="Estado Parroquia"
                 placeholder="Elige un estado"
               />
             </v-col>
@@ -195,14 +160,41 @@
         <v-col cols="12">
           <v-row>
             <v-col cols="6">
-              <VTextField
-                label="Municipio"
-                variant="outlined"
-              />
+              <v-row>
+                <v-col cols="4">
+                  <VTextField
+                  label="Libro"
+                  variant="outlined"
+                />
+                </v-col>
+                <v-col cols="4">
+                  <VTextField
+                  label="Pagina"
+                  variant="outlined"
+                />
+                </v-col>
+                <v-col cols="4">
+                  <VTextField
+                  label="Acta"
+                  variant="outlined"
+                />
+                </v-col>
+                </v-row>
             </v-col>
             <v-col cols="6">
+                  <VTextField
+                  label="Fecha de Nacimiento"
+                  type="date"
+                  variant="outlined"
+                />
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12">
+          <v-row>
+            <v-col cols="6">
               <VTextField
-                label="Localidad"
+                label="Diócesis"
                 variant="outlined"
               />
             </v-col>
@@ -231,28 +223,6 @@
           </v-row>
         </v-col>
         <br>
-        <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Abuelos</strong></h3>
-        <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
-          <!-- Contenido de cada columna -->
-        </v-col>
-
-        <v-col cols="12">
-          <v-row>
-            <v-col cols="6">
-              <VTextField
-                label="Nombre Abuelo"
-                variant="outlined"
-              />
-            </v-col>
-            <v-col cols="6">
-              <VTextField
-                label="Nombre Nombre Abuela"
-                variant="outlined"
-              />
-            </v-col>
-          </v-row>
-        </v-col>
-        <br>
         <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Padrinos</strong></h3>
         <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
           <!-- Contenido de cada columna -->
@@ -269,28 +239,6 @@
             <v-col cols="6">
               <VTextField
                 label="Nombre Madrina"
-                variant="outlined"
-              />
-            </v-col>
-          </v-row>
-        </v-col>
-        <br>
-        <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Testigos</strong></h3>
-        <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
-          <!-- Contenido de cada columna -->
-        </v-col>
-
-        <v-col cols="12">
-          <v-row>
-            <v-col cols="6">
-              <VTextField
-                label="Nombre Testigo 1"
-                variant="outlined"
-              />
-            </v-col>
-            <v-col cols="6">
-              <VTextField
-                label="Nombre Testigo 2"
                 variant="outlined"
               />
             </v-col>
