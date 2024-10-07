@@ -98,7 +98,7 @@ declare module 'vue-router/auto-routes' {
     'front-pages-landing-page': RouteRecordInfo<'front-pages-landing-page', '/front-pages/landing-page', Record<never, never>, Record<never, never>>,
     'front-pages-payment': RouteRecordInfo<'front-pages-payment', '/front-pages/payment', Record<never, never>, Record<never, never>>,
     'front-pages-pricing': RouteRecordInfo<'front-pages-pricing', '/front-pages/pricing', Record<never, never>, Record<never, never>>,
-    'librosparroquiales-agregar-bautismo': RouteRecordInfo<'librosparroquiales-agregar-bautismo', '/librosparroquiales/agregarBautismo', Record<never, never>, Record<never, never>>,
+    'librosparroquiales-agregar-bautismo': RouteRecordInfo<'librosparroquiales-agregar-bautismo', '/librosparroquiales/agregar-bautismo', Record<never, never>, Record<never, never>>,
     'librosparroquiales-agregar-confirmacion': RouteRecordInfo<'librosparroquiales-agregar-confirmacion', '/librosparroquiales/agregarConfirmacion', Record<never, never>, Record<never, never>>,
     'librosparroquiales-agregar-matrimonio': RouteRecordInfo<'librosparroquiales-agregar-matrimonio', '/librosparroquiales/agregarMatrimonio', Record<never, never>, Record<never, never>>,
     'librosparroquiales-agregar-primera-comunion': RouteRecordInfo<'librosparroquiales-agregar-primera-comunion', '/librosparroquiales/agregarPrimeraComunion', Record<never, never>, Record<never, never>>,

@@ -68,4 +68,25 @@ export const routes = [
     name: 'apps-ecommerce-dashboard',
     component: () => import('@/pages/dashboards/ecommerce.vue'),
   },
+  // Rutas manuales el proyecto
+  {
+    path: '/librosparroquiales/resumen',
+    name: 'librosparroquiales-resumen',
+    component: () => import('@/pages/librosparroquiales/resumen.vue'),
+  },
+  {
+    path: '/librosparroquiales/',
+    children: [
+      {
+        path: 'bautismos',
+        name: 'librosparroquiales-bautismos',
+        component: () => import('@/pages/librosparroquiales/bautismos.vue'),
+      },
+      {
+        path: '/librosparroquiales/bautismos/agregar',
+        name: 'librosparroquiales-bautismos-agregar',
+        component: () => import('@/pages/librosparroquiales/agregar-bautismo.vue'),
+      },
+    ],
+  },
 ]

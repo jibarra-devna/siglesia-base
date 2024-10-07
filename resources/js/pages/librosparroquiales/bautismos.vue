@@ -4,10 +4,10 @@ import * as demoCode from '@/views/demos/forms/tables/data-table/demoCodeDataTab
 
 <template>
   <div style="display: grid; grid-gap: 1.25rem; grid-template-columns: 1fr 1fr;">
-    <h6 class="text-h6"><span class="subtitle text-h6">Libros Parroquiales / </span> Bautismos</h6>
+    <h6 class="text-h6"><RouterLink :to="{ name: 'librosparroquiales-resumen' }">Libros Parroquiales</RouterLink> / Bautismos</h6>
     <div style="text-align: end;">
       <a href="javascript:void(0);">
-        <vBtn class="custom-btn" size="small" to="/librosparroquiales/agregarBautismo">
+        <vBtn class="custom-btn" size="small" :to="{ name: 'librosparroquiales-bautismos-agregar' }">
           <VIcon size="1rem" icon="bx-plus" />Añadir Bautismo
         </vBtn>
       </a>

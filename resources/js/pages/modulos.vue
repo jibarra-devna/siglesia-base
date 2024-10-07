@@ -66,7 +66,7 @@ definePage({
           <VBtn
           rounded="pill"
           variant="tonal"
-          to="librosparroquiales/resumen"
+          :to="{ name: 'librosparroquiales-resumen' }"
           class="boton"
           >
           Ingresar

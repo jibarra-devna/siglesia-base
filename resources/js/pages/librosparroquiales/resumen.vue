@@ -58,10 +58,10 @@ const reportData = [
               <br>
               <VRow>
                 <VCol class="d-flex" cols="12" style="gap: 8px;">
-                  <VBtn class="custom-btn" size="small" to="/librosparroquiales/bautismos">
+                  <VBtn class="custom-btn" size="small" :to="{ name: 'librosparroquiales-bautismos' }">
                     <VIcon size="1rem" icon="bx-book" />&nbsp;Índice Bautismos
                   </VBtn>
-                  <VBtn class="custom-btn" size="small" to="/librosparroquiales/agregarBautismo">
+                  <VBtn class="custom-btn" size="small" :to="{ name: 'librosparroquiales-bautismos-agregar' }">
                     <VIcon size="1rem" icon="bx-plus" />&nbsp;Añadir Bautismo
                   </VBtn>
                 </VCol>

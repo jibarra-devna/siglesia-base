@@ -1,10 +1,10 @@
 
 <template>
       <div style="display: grid; grid-gap: 1.25rem; grid-template-columns: 1fr 1fr;">
-    <h6 class="text-h6"><span class="subtitle text-h6">Libros Parroquiales / </span> <span class="subtitle text-h6">Bautismos / </span> Agregar Bautismo</h6>
+    <h6 class="text-h6"><RouterLink :to="{ name: 'librosparroquiales-resumen' }">Libros Parroquiales</RouterLink> / <RouterLink :to="{ name: 'librosparroquiales-bautismos' }">Bautismos</RouterLink> / Agregar Bautismo</h6>
     <div style="text-align: end;">
       <a href="javascript:void(0);">
-        <vBtn class="custom-btn" size="small" to="/librosparroquiales/bautismos">
+        <vBtn class="custom-btn" size="small" :to="{ name: 'librosparroquiales-bautismos' }">
           <VIcon size="1rem" icon="bx-book" />Ir al Índice
         </vBtn>
       </a>
@@ -18,7 +18,7 @@
       <v-card-text>
         <v-form>
           <p></p>
-          <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Datos del Bautismo</strong></h3>
+          <h3><span style="color: #696cff; vertical-align: 1px;">━━━━━━━━━ </span><strong>Datos del Bautismo</strong></h3>
           <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
             <!-- Contenido de cada columna -->
           </v-col>
@@ -137,7 +137,7 @@
             </v-row>
           </v-col>
           <br>
-          <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Datos del Registro Civil</strong></h3>
+          <h3><span style="color: #696cff; vertical-align: 1px;">━━━━━━━━━ </span><strong>Datos del Registro Civil</strong></h3>
           <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
             <!-- Contenido de cada columna -->
           </v-col>
@@ -227,7 +227,7 @@
             </v-row>
           </v-col>
           <br>
-          <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Padres</strong></h3>
+          <h3><span style="color: #696cff; vertical-align: 1px;">━━━━━━━━━ </span><strong>Padres</strong></h3>
           <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
             <!-- Contenido de cada columna -->
           </v-col>
@@ -249,7 +249,7 @@
             </v-row>
           </v-col>
           <br>
-          <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Abuelos</strong></h3>
+          <h3><span style="color: #696cff; vertical-align: 1px;">━━━━━━━━━ </span><strong>Abuelos</strong></h3>
           <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
             <!-- Contenido de cada columna -->
           </v-col>
@@ -271,7 +271,7 @@
             </v-row>
           </v-col>
           <br>
-          <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Padrinos</strong></h3>
+          <h3><span style="color: #696cff; vertical-align: 1px;">━━━━━━━━━ </span><strong>Padrinos</strong></h3>
           <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
             <!-- Contenido de cada columna -->
           </v-col>
@@ -293,7 +293,7 @@
             </v-row>
           </v-col>
           <br>
-          <h3><span style="color: #696cff; vertical-align:1px;">━━━━━━━━━ </span><strong>Testigos</strong></h3>
+          <h3><span style="color: #696cff; vertical-align: 1px;">━━━━━━━━━ </span><strong>Testigos</strong></h3>
           <v-col v-for="n in 0" :key="n" cols="6" class="mb-3">
             <!-- Contenido de cada columna -->
           </v-col>
